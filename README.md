@@ -8,4 +8,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Commands
 
-### build: ng build --prod --base-href /VOW-Symbols
+### build: ng build --prod --base-href=https://diegogadenz.github.io/VOW-Symbols/

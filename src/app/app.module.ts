@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CardSymbolComponent } from './components/card-symbol/card-symbol.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardSymbolComponent
   ],
   imports: [
     BrowserModule,
