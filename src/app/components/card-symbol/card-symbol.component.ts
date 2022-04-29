@@ -8,7 +8,7 @@ import { SymbolIcon } from 'src/app/models/symbol-icon.model';
 })
 export class CardSymbolComponent implements OnInit {
 
-  private iconsPath = '/assets/symbols/';
+  private iconsPath = '/VOW-Symbols/assets/symbols/';
 
   @Input()
   public symbol: SymbolIcon;
