@@ -4,4 +4,6 @@ export class SymbolIcon {
 
   public icon: string;
 
+  public description = '';
+
 }

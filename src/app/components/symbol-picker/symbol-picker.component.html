@@ -1,0 +1,17 @@
+<ng-template #template>
+
+  <div class="modal-body px-4">
+
+    <div class="row d-flex">
+
+      <img *ngFor="let symbol of symbols" class="icon m-2"
+        [src]="iconPath(symbol)" (click)="iconSelected(symbol)">
+
+    </div>
+
+    <!-- <button type="reset" (click)="closeModal()"
+      class="btn col-md-3">CANCEL</button> -->
+
+  </div>
+
+</ng-template>

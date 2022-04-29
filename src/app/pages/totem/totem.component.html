@@ -1,0 +1,32 @@
+<div class="container mt-5 pt-4">
+
+  <div class="row">
+
+    <div class="col-6 d-flex flex-column align-items-end justify-content-end">
+
+      <div *ngFor="let symbol of symbols; let i = index"
+        class="symbol-area d-flex flex-column align-itens-center justify-content-center"
+        (click)="selectIconIdx(i)">
+        <app-card-symbol
+          [symbol]="symbol">
+        </app-card-symbol>
+      </div>
+
+    </div>
+
+    <div class="col-6 d-flex flex-column align-items-start justify-content-start">
+      <div *ngFor="let symbol of symbols; let i = index"
+        class="text-area d-flex flex-column align-itens-center justify-content-center">
+        <span>{{symbol.description}}</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<app-symbol-picker
+  *ngIf="showIconPicker"
+  (close)="setNewSymbol($event)">
+</app-symbol-picker>
